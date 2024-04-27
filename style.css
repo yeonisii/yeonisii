@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "BMJUA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  height: 220px;
+  background-color: #f5fada;
+}
+
+.title {
+  font-family: "BMJUA";
+  text-align: center;
+  font-size: 55px;
+  padding: 50px 0;
+}
+
+.movie-search {
+  float: right;
+  margin-right: 44.6%;
+}
+
+.src1 {
+  width: 150px;
+  height: 30px;
+  border: none;
+}
+
+.btn1 {
+  margin-left: 5px;
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: lightgray;
+}
+
+.movie-card {
+  width: 90%;
+  height: 1080px;
+  margin: 0 auto;
+}
+
+.movie-list {
+  width: 20%;
+  height: 450px;
+  background-color: #c9e48e;
+  margin-left: 9.5%;
+  margin-top: 2%;
+  display: inline-block;
+  border-radius: 15px;
+  cursor: pointer;
+}
