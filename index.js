@@ -6,6 +6,7 @@ const options = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMmI1ODQxNjc4MjNmZmQ5MDM0NmZiZDUyOGIxNjM4NyIsInN1YiI6IjY2Mjc3MTFkMTc2YTk0MDE2NjgxODE1ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.arTHoepvJVDDHMRWP_5nrRKr_JgbtQ-MlNyLMOGtgpE"
   }
 };
+// 영화 리스트 불러오기
 
 fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", options)
   .then((response) => response.json())
@@ -36,5 +37,10 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", opti
 
   .catch((err) => console.error(err));
 
-//영화 카드 클릭하면 alert 창이 뜨게하기
-let movieli = "";
+// #movie-list css를 적용하는 방법
+if (document.getElementsByTagName("head") != null) {
+  document
+    .getElementsByTagName("head")[0]
+    .insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="./style.css"> />');
+}
+// 출처: https://jake-seo-dev.tistory.com/110 [제이크서 위키 블로그:티스토리]

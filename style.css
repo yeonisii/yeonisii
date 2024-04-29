@@ -47,6 +47,7 @@ header {
   width: 90%;
   height: 1080px;
   margin: 0 auto;
+  display: flex;
 }
 
 #movie-list {
@@ -55,7 +56,7 @@ header {
   background-color: #c9e48e;
   margin-left: 9.5%;
   margin-top: 2%;
-  display: inline-block;
+  display: grid;
   border-radius: 15px;
   cursor: pointer;
 }
