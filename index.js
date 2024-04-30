@@ -44,3 +44,6 @@ if (document.getElementsByTagName("head") != null) {
     .insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="./style.css"> />');
 }
 // 출처: https://jake-seo-dev.tistory.com/110 [제이크서 위키 블로그:티스토리]
+
+//html에 추가하기
+document.getElementById("movie-list").innerHTML = movieCards;

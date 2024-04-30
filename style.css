@@ -43,8 +43,8 @@ header {
   background-color: lightgray;
 }
 
-.movie-card {
-  width: 90%;
+#movie-card {
+  width: 100%;
   height: 1080px;
   margin: 0 auto;
   display: flex;
@@ -52,11 +52,10 @@ header {
 
 #movie-list {
   width: 20%;
-  height: 450px;
   background-color: #c9e48e;
   margin-left: 9.5%;
   margin-top: 2%;
-  display: grid;
+  display: flex;
   border-radius: 15px;
   cursor: pointer;
 }
