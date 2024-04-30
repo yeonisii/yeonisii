@@ -52,7 +52,7 @@ header {
 
 #movie-list {
   width: 20%;
-  background-color: #c9e48e;
+  /* background-color: #c9e48e; */
   margin-left: 9.5%;
   margin-top: 2%;
   display: flex;

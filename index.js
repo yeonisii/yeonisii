@@ -24,6 +24,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", opti
     });
     // 생성된 영화 카드를 DOM에 추가
     document.getElementById("movie-list").innerHTML = movieCards;
+
     // 각 영화 카드에 클릭 이벤트 추가
     let movieLists = document.querySelectorAll(".movie-list");
     movieLists.forEach((movie) => {
@@ -44,6 +45,3 @@ if (document.getElementsByTagName("head") != null) {
     .insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="./style.css"> />');
 }
 // 출처: https://jake-seo-dev.tistory.com/110 [제이크서 위키 블로그:티스토리]
-
-//html에 추가하기
-document.getElementById("movie-list").innerHTML = movieCards;
